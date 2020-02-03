@@ -1,9 +1,8 @@
 from flask import Flask, render_template, request
-
-APP = Flask(__name__) 
-
-@APP.route('/')
-def hello_world():
-
+ 
+app = Flask(__name__) 
+    
+@app.route('/')
+def root():
     return render_template('base.html', title = 'Home')
-  
+   
